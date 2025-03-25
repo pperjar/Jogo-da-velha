@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+        /* Estilos para o tabuleiro e os botões */
+        .tabuleiro {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .tabuleiro button {
+            width: 100px;
+            height: 100px;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .placar {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        #reiniciar {
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <div class="placar">
+        <p>Jogador 1 (X): <span id="placar-jogador1">0</span></p>
+        <p>Jogador 2 (O): <span id="placar-jogador2">0</span></p>
+    </div>
+
+    <div class="tabuleiro">
+        <!-- Botões para o tabuleiro -->
+        <button data-pos="0"></button>
+        <button data-pos="1"></button>
+        <button data-pos="2"></button>
+        <button data-pos="3"></button>
+        <button data-pos="4"></button>
+        <button data-pos="5"></button>
+        <button data-pos="6"></button>
+        <button data-pos="7"></button>
+        <button data-pos="8"></button>
+    </div>
+
+    <button id="reiniciar">Reiniciar Jogo</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
